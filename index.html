@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/script1.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>SPA-B2C</title>
+</head>
+<body>
+    <main class="row d-flex justify-content-center p-5">
+        <section style="display: flex; flex-direction: column; justify-content: center; align-items: center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 15px; z-index: 100; background-color: white; width: 100%; height: 100%; opacity: 0; visibility: hidden;" id="form" class="col-12 col-md-6 px-2 mb-5">
+            <div class="d-flex justify-content-between" style="width: 30rem">
+                <h2 id="title" class="col-8 mb-4"></h2>
+                <div><button id="close" class="btn btn-dark">X</button></div>
+            </div>
+            <form class="d-flex flex-column gap-2" style="width: 30rem" >
+                <div class="form-group">
+                    <label for="itemInput">Item</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="itemInput"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="priceInput">Price</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="priceInput"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="categoryInput">Category</label>
+                    <input 
+                        type="text" 
+                        class="form-control" 
+                        id="categoryInput"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="descriptionInput">Description</label>
+                    <input 
+                        type="description" 
+                        class="form-control" 
+                        id="descriptionInput"
+                    >
+                </div>
+                <div class="form-group">
+                    <label for="imageInput">Image</label>
+                    <input 
+                        type="description" 
+                        class="form-control" 
+                        id="imageInput"
+                    >
+                </div>
+                <br>
+                <button id="submitForm" type="submit" class="btn btn-dark">Submit</button>
+              </form>
+        </section>
+        <section class="col col-md-12">
+            <div class="d-flex justify-content-between align-items-center">
+                <img src="./adidas_318-565831.avif" alt="Descripción de la imagen" style="width: 5rem; height: auto;">
+                <h3 class="col-9 mb-8">Dashboard</h3>
+                <button id="create" class="btn btn-dark h-25 p-2">Create New Product</button>
+            </div>
+            <div id="usersList" class="d-flex flex-column gap-3"></div>
+        </section>
+    </main>
+</body>
+</html>
